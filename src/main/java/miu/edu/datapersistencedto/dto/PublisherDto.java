@@ -1,2 +1,15 @@
-package miu.edu.datapersistencedto.dto;public class PublisherDto {
+package miu.edu.datapersistencedto.dto;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class PublisherDto {
+    private String publisherName;
+    private AddressDto addressDto;
+
+    public PublisherDto(String publisherName) {
+        this.publisherName = publisherName;
+    }
 }
